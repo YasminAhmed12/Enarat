@@ -1,0 +1,569 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;1,300;1,500&family=Poppins:wght@200;300;400;500;600&family=Raleway:wght@200;300;400;500;600;700;800&family=Source+Sans+3:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+
+
+*{
+    margin: 0%;
+    padding: 0%;
+    font-family: 'Source Sans 3', sans-serif;
+
+}
+
+ .home{
+    background-image: url(images/co.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100%;
+    height: 600px;
+    margin-bottom: 20px;
+}
+ .edit{
+    background-color: rgba(0, 0, 0, 0.6);
+    width: 100%;
+    height: 600px;
+}
+.navbar{
+    z-index: 5;
+}
+.navbar ul li a{
+    color: white;
+    padding: 10px 25px;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+ .navbar ul li a:hover{
+    color: #888;
+}
+
+
+.animation-sec1{
+    margin-bottom: 16px;
+    color: #dee3e4;
+    font-size: 35px;
+
+}
+
+ .animation-sec1::after
+{
+    content: "|";
+    animation-name: typing;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    font-size: 45px;
+    font-weight: 600;
+}
+
+@keyframes typing { 
+    0%{content: "|";}
+    2%{content: " S|";}
+    4%{content: " Sh|";}
+    6%{content: " Sho|";}
+    8%{content: " Shop|";}
+    10%{content: " Shop|";}
+    12%{content: " Sho|";}
+    14%{content: " Sh|";}
+    16%{content: " S|";}
+    18%{content: " |";}
+    22%{content: " A|";}
+    24%{content: " Al|";}
+    26%{content: " All|";}
+    28%{content: " Al|";}
+    30%{content: " A|";}
+    30%{content: " |";}
+    32%{content: " L|";}
+    34%{content: " Li|";}
+    36%{content: " Lig|";}
+    38%{content: " Ligh|";}
+    40%{content: " Light|";}
+    42%{content: " Lighti|";}
+    44%{content: " Lightin|";}
+    46%{content: " Lighting|";}
+    48%{content: " Lightin|";}
+    50%{content: " Lighti|";}
+    52%{content: " Light|";}
+    54%{content: " Ligh|";}
+    56%{content: " Lig|";}
+    58%{content: " Li|";}
+    60%{content: " L|";}
+    62%{content: " |";}
+    64%{content: " P|";}
+    66%{content: " Pr|";}
+    68%{content: " Pro|";}
+    70%{content: " Prod|";}
+    72%{content: " Produ|";}
+    74%{content: " Produc|";}
+    76%{content: " Product|";}
+    78%{content: " Products|";}
+    80%{content: " Product|";}
+    82%{content: " Produc|";}
+    84%{content: " Produ|";}
+    86%{content: " Prod|";}
+    88%{content: " Pro|";}
+    90%{content: " Pr|";}
+    92%{content: " P|";}
+    100%{content: " |";}
+}
+
+.intro i{
+    
+    font-size: 15px;
+    width: 40px;
+    height: 30px;
+    line-height: 30px;
+    border-radius: 50%;
+    background: rgba(0, 0, 0, 0.3);
+    text-align: center;
+
+}
+
+.intro{
+    color: white;
+   
+}
+
+
+.intro h2{
+text-align: center;
+}
+
+.icon-sec1{
+    padding: 0 30px;
+
+}
+
+.edit img{
+    width: 150px;
+}
+
+        /* ---------------------section two ------------------*/
+
+.about{
+    padding: 40px;
+    margin-left : 50px;
+    margin-right: 20px;
+    margin-bottom: 100px;
+}
+.about img{
+    height: 580px;
+    width: 550px;
+}
+
+.Atext{
+    margin-left: 190px;
+}
+
+.test-sec2 h2{
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.test-sec2 h5{
+    color: #888;
+    font-size: 17px;
+    margin-bottom: 20px;
+}
+.test-sec2 p{
+    font-size: 17px;
+    color: #748182;
+}
+.test-sec2 span{
+    font-weight: bold;
+}
+
+.skill{
+    width: 80%;
+    margin-bottom: 30px;
+    margin-right: 100px;
+    
+}
+
+.text-skill{
+    font-size: 25px;
+    font-weight: 600;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    color: #252b33;
+}
+ 
+.skill-name{
+    color: #666;
+    font-size: 15px;
+    margin: 0;
+   }
+.skill-bar{   
+    width: 100%;
+    height: 15px;
+    background: #eee;
+    border-radius: 5px;
+}
+
+.skill-per{    
+    display: block;
+    border-radius: 3px;
+    position: relative;
+    height: 100%;
+    background: rgb(46,122,147);
+    animation: fiLLBars 2.5s 1;
+}
+    
+.skill-per::after{
+    content: attr(per); 
+    position: absolute;
+    padding: 4px 0px;
+    border-radius: 4px;
+    font-size: 12px;
+    top: -20px; 
+    right: 0px;
+    text-align: center;
+    width: 40px;
+    color: #666;
+    }
+
+
+@keyframes fiLLBars{
+    from{
+        width: 0;
+    }
+
+    to{
+        width: 100;
+    }
+}
+
+
+.btn{
+    margin-top: 15px;
+}
+
+
+ .btn1{
+    border: rgb(46,122,147) solid 2px;
+    background-color: rgb(46,122,147);
+    color: white;
+    border-radius: 10px;
+    padding: 12px 40px;
+    font-weight: 500;
+    text-decoration: none;
+    margin-right: 10px;
+}
+
+.btn1:hover{
+    background-color: rgb(60, 146, 175);
+}
+
+.btn2{
+    text-decoration: none;
+    font-weight: 550;
+    color: rgb(46,122,147);
+    border: rgb(46,122,147) solid 2px;
+    border-radius: 10px;
+    padding: 12px 40px;
+}
+
+.btn2:hover{
+    background-color: rgb(46,122,147)    ;
+    color: white;
+}
+
+        /* ---------------------section three ------------------*/
+
+
+.services{
+    padding-top: 100px;
+    padding-bottom: 70px;
+}
+
+.services h2{
+    margin-bottom: 80px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 40px;
+}
+
+.card-title{
+    font-weight: 600;
+    font-size: 20px;
+}
+
+        /* ---------------------section four ------------------*/
+.protfolio{
+    margin-bottom: 100px;
+}
+
+.protfolio h2{
+    margin-bottom: 50px;
+    margin-top: 100px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 40px;
+}
+
+.protfolio ul li .nav-link{
+    padding: 2px 10px;
+    text-decoration: none ;
+    font-size: 18px;
+    color: #7b8084;        
+}
+        
+        
+.protfolio ul li .nav-link:hover{
+    color: rgb(46,122,147);
+}
+
+
+
+  
+  .image {
+    opacity: 1;  
+    transition: .5s ease;
+    backface-visibility: hidden;
+  }
+  
+  .middle {
+    transition: .5s ease;
+    opacity: 0;
+    text-align: center;
+  }
+  .card-img{
+    margin-bottom: 10px;
+  }
+  
+  .card:hover .image {
+    opacity: 0.1;
+  }
+  
+  .card:hover .middle {
+    opacity: 1;
+  }
+  
+.text a{
+    color: rgb(46,122,147);
+    font-size: 20px;
+    font-weight: 700;
+    text-decoration: none;
+  }
+
+.card i{
+    font-size: 15px;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    border-radius: 50%;
+    background: rgba(0, 0, 0, 0.2);
+    text-align: center;
+  }
+        /* ---------------------section five ------------------*/
+
+.testimonials, .blog{
+    padding-top: 100px;
+    padding-bottom: 70px;
+    margin-top: 50px;
+    
+}
+
+
+.testimonials h2, .blog h2, .contect h2{
+    margin-bottom: 50px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 40px;
+  }
+  
+  .carousel p{
+    word-spacing: 2px;
+    line-height: 1.6;
+    margin: 0;
+    font-size: 20px;
+    color: #748182;
+    text-align: center
+}
+
+
+.carousel h3 {
+    font-size: 15px;
+    font-weight: 600;
+    margin: 30px 0 5px;
+    text-align: center
+}
+
+
+.carousel h5{
+    font-size: 15px;
+    font-weight: 600;
+    color: #888;
+    margin-bottom: 60px;
+    text-align: center
+}
+
+
+ .item-counter, .item-contect{
+    margin-top: 80px;
+    
+} 
+.item-counter i, .item-contect i{
+    font-size: 30px;
+    color: #2c3136;
+}
+
+ .textnum, .txt2{
+    color: #65717c;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+ .num, .txt1{
+    color: #2c3136;
+    font-weight: 600;
+    margin: 10px 0;
+    font-size: 20px;
+}
+
+ .num::after{
+    content: "";
+    animation-name: about-counter;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes about-counter {
+    0%{content:  "50+";}
+    10%{content: "51+";}
+    20%{content: "52+";}
+    30%{content: "53+";}
+    40%{content: "54+";}
+    50%{content: "55+";}
+    60%{content: "56+";}
+    70%{content: "57+";}
+    80%{content: "58+";}
+    90%{content: "59+";}
+    100%{content:"60+";}
+}
+
+        /* ---------------------section six ------------------*/
+
+.blog .card-title{
+    color: #888;
+    font-size: 12px;
+    text-align: start;
+    margin-bottom: 20px;
+}
+
+.blog .card-text{
+    font-weight: 800;
+    font-size: 20px;
+    line-height: 1.6;
+    margin-bottom: 10px;
+    text-align: start;
+    color: #2c3136;
+
+}
+
+.blog .carousel-indicators{
+    margin-bottom: -40px;
+}
+
+
+        /* ---------------------section seven ------------------*/
+
+.contect{
+    padding-top: 70px;
+    padding-bottom: 70px;    
+}
+
+
+.contect textarea, .contect input{
+    border: 0;
+    border-radius: 5px;
+    padding: 10px;
+    background: #f4f4f4;
+}
+
+        /* ---------------------footer ------------------*/
+
+footer{
+    height: 40px;
+    background-color: rgb(46,122,147);
+}
+
+
+
+@media (min-width:200px) and (max-width:700px) {
+    .navbar ul li a{
+        padding: 1px 3px;
+        font-size: 11px;
+
+    }
+
+    .edit img{
+        width: 70px;
+    }
+
+    .about img{
+        height: 340px;
+        width: 270px;
+        
+    }
+}
+
+@media (min-width:700px) and (max-width:1100px) {
+    .navbar ul li a{
+        padding: 1px 15px;
+        font-size: 15px;
+
+    }
+    .edit img{
+        width: 120px;
+    }
+
+  
+}
+
+
+@media (min-width:10px) and (max-width:500px) {
+    .animation-sec1::after
+    { 
+        font-size: 25px;
+    }
+
+    .intro i{
+    
+        font-size: 8px;
+        width: 20px;
+        }
+    }
+
+
+
+@media (min-width:100px) and (max-width:1100px) {
+
+    
+
+    .about{
+        padding: 20px;
+        margin-left : 10px;
+        margin-right: 10px;
+    }
+
+
+    .Atext{
+        margin-left: -20px;
+        margin-top: 50px;
+    }
+
+    .btn1{
+        padding: 2px 12px;
+        font-weight: 150;
+        margin-right: 5px;
+    }
+    
+    
+    .btn2{
+        font-weight: 150;
+        padding: 2px 12px;
+    }
+   
+}
+
+
+
